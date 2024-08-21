@@ -15,6 +15,24 @@ struct Deck {
 }
 
 fn main() {
+    // Macros are essentially functions that return the data type
+    // List of suits
+    // Arrays are only marginally faster than Vectors.
+    // Arrays should be used to communicate when data sets are not going to change
+    let suits = ["Hearts", "Spades", "Diamonds"];
+    // List of values
+    let values = ["Ace", "Two", "Three"];
+    // Double-nested for loop
+
+    let cards = Vec::new();
+
+    for suit in suits {
+        for value in values {
+            let card = format!("{} of {}", value, suit);
+            cards.push(card)
+        }
+    }
+
     // variables are called bindings
     // declare a new binding variable, create an instance of a struct, and create an empty vector for cards
     // alternative way of writing vec![] is Vec::new()
