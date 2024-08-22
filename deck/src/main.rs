@@ -24,7 +24,9 @@ fn main() {
     let values = ["Ace", "Two", "Three"];
     // Double-nested for loop
 
-    let cards = Vec::new();
+    // bindings (variables) are immutable (can't change) by default
+    // You cannot change the value or reassign a binding
+    let mut cards = Vec::new();
 
     for suit in suits {
         for value in values {
@@ -36,8 +38,11 @@ fn main() {
     // variables are called bindings
     // declare a new binding variable, create an instance of a struct, and create an empty vector for cards
     // alternative way of writing vec![] is Vec::new()
-    let deck = Deck { cards: vec![] };
+    // if the key and value ref are named the same, the expression can be simplified
+    let deck = Deck { cards };
 
     // using a debug formatter to print out this data
-    println!("Here is your deck: {:?}", deck);
+    // {:?} - just print out the variable
+    // {:#?} - pretty print
+    println!("Here is your deck: {:#?}", deck);
 }
