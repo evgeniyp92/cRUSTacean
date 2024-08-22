@@ -47,8 +47,10 @@ impl Deck {
         // declare a new binding variable, create an instance of a struct, and create an empty vector for cards
         // alternative way of writing vec![] is Vec::new()
         // if the key and value ref are named the same, the expression can be simplified
-        let deck = Deck { cards };
-        return deck;
+        // let deck = Deck { cards };
+        // return deck;
+        // Implicit return, compare with two lines above
+        Deck { cards }
     }
 }
 
