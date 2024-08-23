@@ -34,8 +34,10 @@ impl Bank {
     }
 }
 
-fn print_account(account: Account) {
-    println!("{:#?}", account)
+// fn tweaked to take ownership of the value and then return it
+fn print_account(account: Account) -> Account {
+    println!("{:#?}", account);
+    account
 }
 
 fn print_holder(holder: String) {
@@ -43,8 +45,8 @@ fn print_holder(holder: String) {
 }
 
 fn main() {
-    let account = Account::new(1, String::from("me"));
-
-    print_holder(account.holder);
-    print_account(account);
+    let mut account = Account::new(1, String::from("me"));
+    
+    account = print_account(account);
+    account = print_account(account);
 }

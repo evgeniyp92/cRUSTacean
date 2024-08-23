@@ -7,13 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="218815bf-d3d2-4172-858e-fcdfff0d7fd2" name="Changes" comment="Explain basics of ownership and borrowing">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="218815bf-d3d2-4172-858e-fcdfff0d7fd2" name="Changes" comment="recommit project files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +38,7 @@
   "keyToString": {
     "Cargo.Run.executor": "Run",
     "Cargo.check.executor": "Run",
+    "Cargo.fix.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -64,9 +60,10 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="cargo check" />
+      <command value="cargo fix" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.fix">
+  <component name="RunManager" selected="Cargo.check">
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package bank --bin bank" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -120,8 +117,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.fix" />
         <item itemvalue="Cargo.check" />
+        <item itemvalue="Cargo.fix" />
         <item itemvalue="Cargo.check" />
       </list>
     </recent_temporary>
@@ -154,7 +151,7 @@
       <workItem from="1724407778781" duration="112000" />
       <workItem from="1724407968631" duration="230000" />
       <workItem from="1724408227276" duration="11000" />
-      <workItem from="1724408567805" duration="129000" />
+      <workItem from="1724408567805" duration="628000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit for bank project">
       <option name="closed" value="true" />
@@ -188,7 +185,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724405603202</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add print_holder function and update main&#10;&#10;Introduce a new helper function `print_holder` to print the account holder's name. Update the `main` function to utilize this new function before printing the entire account.">
+      <option name="closed" value="true" />
+      <created>1724408741902</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724408741902</updated>
+    </task>
+    <task id="LOCAL-00006" summary="recommit project files">
+      <option name="closed" value="true" />
+      <created>1724408783668</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724408783668</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +223,9 @@
     <MESSAGE value="Write basic new fns for structs" />
     <MESSAGE value="Write debug inits and print them" />
     <MESSAGE value="Explain basics of ownership and borrowing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Explain basics of ownership and borrowing" />
+    <MESSAGE value="Add print_holder function and update main&#10;&#10;Introduce a new helper function `print_holder` to print the account holder's name. Update the `main` function to utilize this new function before printing the entire account." />
+    <MESSAGE value="recommit project files" />
+    <option name="LAST_COMMIT_MESSAGE" value="recommit project files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
